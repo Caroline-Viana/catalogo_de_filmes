@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/f15116d8cf.js" crossorigin="anonymous"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./styles/reset.css">
+    <link rel="stylesheet" href="./styles/slyle.css">
+    <title>Catálogo de Filmes</title>
+</head>
+<body>
+    <main>
+        <div class="cabecalho">
+            <h1 class="cabecalho__titulo">Filmes Populares</h1>
+            <fieldset class="cabecalho__conjunto">
+                <input type="search" placeholder="Digite algum filme para pesquisar..." class="cabecalho__pesquisa" id="cabecalho__pesquisa" data-pesquisar>
+                <i class="fa-solid fa-magnifying-glass" id="botao-pesquisa"></i>
+            </fieldset>
+            <fieldset>
+                <input type="checkbox" name="favoritos" class="cabecalho__favoritos" id="cabecalho__favoritos">
+                <label for="favoritos" class="cabecalho__texto">Mostrar meus filmes favoritos apenas</label>
+            </fieldset>
+        </div>
+        <div class="filmes"></div>
+    </main>
+    <script src="./js/script.js" type="module"></script>
+    <script src="./js/carregarFilme.js" type="module"></script>
+</body>
+</html>

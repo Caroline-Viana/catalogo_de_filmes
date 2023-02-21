@@ -1,0 +1,130 @@
+:root {
+    --fonte-principal: 'Kumbh Sans', sans-serif;
+    --cor-primaria: #fff;
+    --cor-primaria-transparente: rgba(255, 255, 255, 0.308);
+    --cor-segundaria: #ACACAC;
+    --cor-terciaria:#1D1C3B;
+    --cor-quartenaria: #121125;
+    --sombra: 32.8387px 24.5482px 79px rgba(0, 0, 0, 0.15), 23.8851px 17.855px 53.2479px rgba(0, 0, 0, 0.121406), 16.6246px 12.4276px 34.4391px rgba(0, 0, 0, 0.10125), 10.9035px 8.15079px 21.3701px rgba(0, 0, 0, 0.0867188), 6.56775px 4.90965px 12.8375px rgba(0, 0, 0, 0.075), 3.46346px 2.58907px 7.6377px rgba(0, 0, 0, 0.0632813), 1.4367px 1.07399px 4.56719px rgba(0, 0, 0, 0.04875), 0.333519px 0.249318px 2.42246px rgba(0, 0, 0, 0.0285938);
+}
+
+@font-face {
+    font-family: 'icones';
+    src: url(./icones.ttf);
+}
+
+body {
+    font-family: var(--fonte-principal);
+    font-weight: 500;
+    font-size: 18px;
+    color: var(--cor-primaria);
+    background-color: var(--cor-quartenaria);
+}
+
+/* Cabeçalho */
+
+.cabecalho {
+    margin: 3rem;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+}
+
+.cabecalho__titulo {
+    font-size: 36px;
+    font-weight: 600;
+    margin-bottom: 1.5rem;
+}
+
+.cabecalho__conjunto {
+    background-color: var(--cor-primaria-transparente);
+    width: 50%;
+    margin: 1rem auto;
+    border-radius: 5px;
+}
+
+.cabecalho__pesquisa {
+    width: 90%;
+    padding: 1rem;
+    border: none;
+    outline: none;
+    background-color: transparent;
+    margin-right: 0.5rem;
+    color: var(--cor-quartenaria);
+}
+
+.cabecalho__pesquisa::placeholder {
+    color: var(--cor-quartenaria);
+}
+
+.fa-magnifying-glass {
+    cursor: pointer;
+}
+
+/* Cards */
+
+.card {
+    width: 80%;
+    margin: 2.5rem auto;
+    display: flex;
+    padding: 2rem 4rem;
+    background-color: var(--cor-terciaria);
+    box-shadow: var(--sombra);
+    border-radius: 8px;
+}
+
+.card__imagem {
+    width: 139px;
+    height: 139px;
+    border-radius: 800px;
+}
+
+.card__informacao {
+    margin-left: 3rem;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+}
+
+.card__item{
+    width: 30%;
+}
+
+.card__interacao {
+    display: flex;
+    margin-top: 2rem;
+    gap: 1rem;
+}
+
+.card__icones {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    font-weight: 400;
+}
+
+.fa-star{
+    color: #D7A82F;
+}
+
+.fa-regular {
+    display: block;
+}
+
+.fa-heart {
+    color: #BA0707;
+    cursor: pointer;
+}
+
+.fa-heart--favorito {
+    display: none;
+}
+
+.card__texto {
+    width: 70%;
+    margin: auto;
+    display: flex;
+    justify-content: flex-start;
+    color: var(--cor-segundaria);
+    line-height: 32px;
+}
